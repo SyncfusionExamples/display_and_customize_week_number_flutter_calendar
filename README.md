@@ -12,7 +12,7 @@ The week number is not applicable fo the schedule view in the calendar.
 # Customizing week number appearance.
 In this sample we have customized the week number styles by using the calendar's [weekNumberStyle](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle-class.html) property.
 
-
+![WeekNumber](https://user-images.githubusercontent.com/46158936/204233424-082b0876-d27c-4eeb-8f7b-37ea947b3ff3.gif)
 
 You can also refer our UG documentation to know more about [WeekNumberStyle](https://help.syncfusion.com/flutter/calendar/getting-started#week-number-appearance).
 
