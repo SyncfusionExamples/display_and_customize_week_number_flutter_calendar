@@ -2,54 +2,17 @@
 
 This example demonstrates How to show and customize the week number in the Flutter Calendar.
 
-Use the [showWeekNumber](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/showWeekNumber.html) property of the calendar to display the week number in the Flutter calendar. Customize the week number styles by using the calendar's [weekNumberStyle](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle-class.html) property.
+# Display week number in the Calendar
+Use the [showWeekNumber](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/showWeekNumber.html) property of the calendar to display the week number in the Flutter calendar. Week numbers will be displayed based on the ISO standard. 
 
-## Defining show week number and week number styles
+In the month view, it is displayed at the left side as a separate column. whereas in the week and work week view it is displayed beside the view header panel, and for day and timeline views it is displayed next to the header text in the header panel of the calendar. 
 
-```
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:syncfusion_flutter_calendar/calendar.dart';
+The week number is not applicable fo the schedule view in the calendar.
 
-void main() => runApp(const WeekNumber());
+# Customizing week number appearance.
+In this sample we have customized the week number styles by using the calendar's [weekNumberStyle](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle-class.html) property.
 
-class WeekNumber extends StatefulWidget {
-  const WeekNumber({Key? key}) : super(key: key);
 
-  @override
-  State<StatefulWidget> createState() => WeekNumberCustomization();
-}
-
-class WeekNumberCustomization extends State<WeekNumber> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          body: SafeArea(
-            child: SfCalendar(
-              showWeekNumber: true,
-              view: CalendarView.month,
-              allowedViews: const[
-                CalendarView.day,
-                CalendarView.week,
-                CalendarView.workWeek,
-                CalendarView.month,
-                CalendarView.timelineDay,
-                CalendarView.timelineWeek,
-                CalendarView.timelineWorkWeek,
-                CalendarView.timelineMonth
-              ],
-              weekNumberStyle: const WeekNumberStyle(
-                  textStyle: TextStyle(color: Colors.amber),
-                  backgroundColor: Color(0xFFDF5E5E)),
-            ),
-          )),
-    );
-  }
-}
-
-```
 
 You can also refer our UG documentation to know more about [WeekNumberStyle](https://help.syncfusion.com/flutter/calendar/getting-started#week-number-appearance).
 
